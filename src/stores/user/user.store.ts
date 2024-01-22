@@ -37,7 +37,7 @@ export const useUserStore = create<UserState>((set, get) => ({
     set({ isLoading: true });
     try {
       const response = await axios.post(`https://reqres.in/api/login`, credentials);
-      // console.log(response);
+      console.log(response);
       const { token } = response.data;
       localStorage.setItem("tokenAuth", token);
       set({ isLoading: false });
