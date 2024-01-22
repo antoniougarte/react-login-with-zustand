@@ -1,22 +1,22 @@
-import { createContext, useEffect, useState } from "react";
+// import { createContext, useEffect, useState } from "react";
 
-const UserContext = createContext()
+// const UserContext = createContext()
 
-const UserContextProvider = ({ children }) => {
+// const UserContextProvider = ({ children }) => {
 
-  const [ usuario, setUsuario ] = useState({})
-  useEffect(() => {
-    setUsuario({
-      name: "Paulo Ugarte",
-      registered: "22/Enero/20233"
-    })
-  }, [])
+//   const [ usuario, setUsuario ] = useState({})
+//   useEffect(() => {
+//     setUsuario({
+//       name: "Paulo Ugarte",
+//       registered: "22/Enero/20233"
+//     })
+//   }, [])
 
-  return (
-    <UserContext.Provider value={usuario} >
-      { children }
-    </UserContext.Provider>
-  )
-}
+//   return (
+//     <UserContext.Provider value={usuario} >
+//       { children }
+//     </UserContext.Provider>
+//   )
+// }
 
-export { UserContext, UserContextProvider }
+// export { UserContext, UserContextProvider }
